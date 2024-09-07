@@ -5,6 +5,7 @@
   "main": "index.js",
   "authors": "Nikita Fedosov <bolgaro4ka.github@gmail.com>",
   "scripts": {
+    "dev": "electron .",
     "start": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
