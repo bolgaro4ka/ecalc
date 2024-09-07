@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECalc</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div id="root">
+        <div class="history">
+          <h2 class="dhistory">История</h2>
+
+        </div>
+        <div><textarea id="input"></textarea></div> <!-- <h2 class="dres">История</h2> -->
+        <div class="buttons">
+            <button id="toRad">to rad</button>
+            <button id="hypot">hypot(x1, x2...)</button>
+            <button id="modulus">|x|</button>
+            <button id="round">round(x)</button>  
+            <button id="factorial">x!</button>
+            <button id="clearAll" class="move">C</button>
+            <button id="devide" class="move">/</button>
+            <button id="multiply" class="move">*</button>
+            <button id="backspace" class="move">←</button>
+            
+            <button id="toDeg">to deg</button>
+            <button id="infinity">∞</button>
+            <button id="sin">sin(x)</button>
+            <button id="cos">cos(x)</button>
+            <button id="tan">tan(x)</button>
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="minus" class="move">-</button>
+
+            <button id="arccos">arccos(x)</button>
+            <button id="cosh">cosh(x)</button>
+            <button id="log2">log<sub class="adegree">2</sub>x</button>
+            <button id="log10">log<sub class="adegree">10</sub>x</button>
+            <button id="xiny">x<sup class="degree">y</small></button>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="plus" class="move">+</button>
+            
+
+            <button id="arcsin">arcsin(x)</button>
+            <button id="sinh">sinh(x)</button>
+            <button id="pi">π</button>
+            <button id="e">e</button>
+            <button id="sqrt">√</button>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="equals" class="equals" style="grid-row: span 2; height: 110px;">=</button>
+            
+            <button id="arctg">arctg(x)</button>
+            <button id="tanh">tanh(x)</button>
+            <button id="bktl">(</button>
+            <button id="bktr">)</button>
+            <button id="xin2">x<sup class="degree">2</sup></button>
+            <button id="percent">%</button>
+            <button id="0">0</button>
+            <button id="dot">.</button>
+        </div>
+        
+    </div>
+    <script src="renderer.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>

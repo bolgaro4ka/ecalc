@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Горячие клавиши</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    body {
+      font-family: Roboto-Regular, sans-serif;
+      padding: 20px;
+        overflow-x: hidden;
+      
+      color: var(--current-text-color);
+      background-color: var(--current-bg-color);
+    }
+
+    * {
+        scrollbar-color: var(--current-accent-color) var(--current-bg-history-color) !important;
+    }
+
+    h1 {
+        color: var(--current-accent-color);
+    }
+
+   body::-webkit-scrollbar {
+        width: 10px;
+        scrollbar-color: var(--current-accent-color) var(--current-bg-history-color)  !important;
+    }
+    .shortcut {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Горячие клавиши</h1>
+  <h2>Базовое редактирование</h2>
+  <div class="shortcuts">
+  <div class="shortcut"><strong>Ctrl + C:</strong> Копировать</div>
+  <div class="shortcut"><strong>Ctrl + V:</strong> Вставить</div>
+  <div class="shortcut"><strong>Ctrl + X:</strong> Вырезать</div>
+  <div class="shortcut"><strong>Ctrl + Z:</strong> Отменить</div>
+  <div class="shortcut"><strong>Escape:</strong> Очистить всё</div>
+</div>
+  <h2>Быстрый ввод мат. знаков</h2>
+  <div class="shortcuts">
+  <div class="shortcut"><strong>C:</strong> cos(x)</div>
+  <div class="shortcut"><strong>S:</strong> sin(x)</div>
+  <div class="shortcut"><strong>T:</strong> tg(x)</div>
+  <div class="shortcut"><strong>Shift + C:</strong> arccos(x)</div>
+  <div class="shortcut"><strong>Shift + S:</strong> arcsin(x)</div>
+  <div class="shortcut"><strong>Shift + T:</strong> arctg(x)</div>
+  <div class="shortcut"><strong>Alt + C:</strong> cosh(x)</div>
+  <div class="shortcut"><strong>Alt + S:</strong> sinh(x)</div>
+  <div class="shortcut"><strong>Alt + T:</strong> tanh(x)</div>
+  <div class="shortcut"><strong>Shift + X:</strong> √x</div>
+  <div class="shortcut"><strong>X:</strong> x<sup class="degree">y</sup></div>
+  <div class="shortcut"><strong>Shift + L:</strong> log<sub class="adegree">10</sub>x</div>
+  <div class="shortcut"><strong>L:</strong> log<sub class="adegree">2</sub>x</div>
+  <div class="shortcut"><strong>M:</strong> |x|</div>
+  <div class="shortcut"><strong>H:</strong> hypot(x1, x2...)</div>
+    </div>
+
+    <h2>Переводы и округления</h2>
+    <div class="shortcuts">
+  <div class="shortcut"><strong>Shift + R:</strong> radToDeg(x)</div>
+  <div class="shortcut"><strong>Shift + D:</strong> degToRad(x)</div>
+  <div class="shortcut"><strong>R:</strong> round(x)</div>
+    </div>
+  <h2>Константы</h2>
+  <div class="shortcuts">
+  <div class="shortcut"><strong>E:</strong> e</div>
+  <div class="shortcut"><strong>P:</strong> π</div>
+  <div class="shortcut"><strong>I:</strong> ∞</div>
+  </div>
+  <h2>Перемещение и история</h2>
+  <div class="shortcuts">
+    <div class="shortcut"><strong>←, →, ↓:</strong> Перемещение</div>
+    <div class="shortcut"><strong> ↑:</strong> Последнее из истории</div>
+  </div>
+</div>
+    </div>
+  <!-- Добавьте больше горячих клавиш по мере необходимости -->
+</body>
+</html>

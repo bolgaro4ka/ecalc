@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto-Light.ttf);
+
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+
+    font-family: Roboto-Italic;
+    src: url(../fonts/Roboto-Italic.ttf);
+
+    font-family: Roboto-MediumItalic;
+    src: url(../fonts/Roboto-MediumItalic.ttf);
+
+    font-family: Roboto-BoldItalic;
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+
+    font-family: Roboto-LightItalic;
+    src: url(../fonts/Roboto-LightItalic.ttf);
+
+    font-family: Roboto-ThinItalic;
+    src: url(../fonts/Roboto-ThinItalic.ttf);
+
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto-Black.ttf);
+
+    font-family: Roboto-BlackItalic;
+    src: url(../fonts/Roboto-BlackItalic.ttf);
+
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+
+
+}
+
+:root {
+    --current-text-color: white;
+    --current-bg-color: #363636;
+    --current-accent-color: rgb(255, 174, 0);
+    --current-bg-history-color: #252424;
+    --current-selected-color: rgba(255, 174, 0, 0.3);
+}
+
+body {
+    background: var(--current-bg-color);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    scrollbar-color: var(--current-accent-color) var(--current-bg-history-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--current-text-color);
+    font-family: Roboto-Regular;
+}
+
+#input {
+    
+    color: var(--current-text-color);
+    font-size: 20px;
+    font-family: Roboto-Regular;
+    width: 100vw;
+    height: 121px;
+    padding: 10px;
+    border: none;
+    text-align: right;
+    caret-color: var(--current-accent-color);
+    resize: none;
+    background: var(--current-bg-color);
+
+}
+
+#input:focus, #input:active, #input:hover, button, button:active, button:focus, button:hover {
+    outline: none;
+}
+
+.buttons button {
+    /*  #ffae00 */
+    font-size: 20px;
+    border: none;
+    font-family: Roboto-Regular;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    color: var(--current-text-color);
+    background-color: transparent;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.buttons {
+    display: grid;
+    background: var(--current-bg-history-color);
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100vw;
+    height: 100%;
+    user-select: none;
+}
+
+.equals {
+    background-color: var(--current-accent-color) !important;
+}
+
+.move {
+    color: var(--current-accent-color) !important;
+}
+
+.degree {
+    position: relative;
+    font-size: 13px;
+    top: -5px;
+}
+
+.adegree {
+    position: relative;
+    font-size: 13px;
+    top: 5px;    
+}
+
+#arctg, #arcsin, #arccos, #log10, #log2, #log10, #log2, #sin, #cos, #tan, #toDeg, #toRad, #round, #cosh, #sinh, #tanh, #hypot {
+    font-size: 15px;
+}
+
+
+
+.history {
+    height: 100px;
+    background-color: var(--current-bg-history-color);
+    scrollbar-color: var(--current-accent-color) var(--current-bg-history-color);
+    overflow: auto;
+    padding: 0 10px;
+
+
+}
+
+.history::-webkit-scrollbar {
+    width: 10px;
+    scrollbar-color: var(--current-accent-color) var(--current-bg-history-color);
+}
+
+
+
+.history p {
+    font-size: 15px;
+    color: var(--current-text-color);
+    font-family: Roboto-Regular;
+    
+}
+
+.history p:last-child {
+    color:var(--current-accent-color);
+    font-size: 20px;
+}
+
+.dhistory, .dres {
+    position: absolute;
+    z-index: 0;
+    font-size: 50px;
+    user-select: none;
+    font-family: Roboto-Regular;
+    color: var(--current-accent-color);
+    opacity: 0.3;
+    right: 20px;
+
+    top: 15px;
+}
+
+.dres {
+    top: 120px;
+    right: auto;
+    left: 20px;
+}
+
+::selection {
+    color: var(--current-text-color);
+    background: var(--current-selected-color);
+}
+
+.shortcuts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
